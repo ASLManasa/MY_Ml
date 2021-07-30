@@ -1,7 +1,9 @@
 # Haarcascade Algorithm - used to identify person's face or facial features
 import cv2
-alg = "haarcascade_frontalface_default.xml"
+alg = "opencv/haarcascade_frontalface_default.xml"
 haar_cascade = cv2.CascadeClassifier(alg)
+# face_cascade = cv2.CascadeClassifier('opencv-3.0.0/data/harcascades/haarcascade_frontalface.xml')
+# eye_cascade = cv2.CascadeClassifier('opencv-3.0.0/data/harcascades/haarcascade_eye.xml')
 cam = cv2.VideoCapture(0)
 while True:
     _,img = cam.read()
